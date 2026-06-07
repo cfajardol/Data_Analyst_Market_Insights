@@ -5,7 +5,8 @@ Question: What are the top-paying Data Analyst jobs?
 - Why? Highlight the top-paying opportunities for Data Analysts, offering insights into employment opportunities
 */
 
-SELECT jpf.job_title_short, jpf.job_title, cd.name AS company_name ,jpf.salary_year_avg
+SELECT jpf.job_title_short, jpf.job_title, cd.name AS company_name, 
+jpf.salary_year_avg
 FROM job_postings_fact jpf
 LEFT JOIN company_dim cd ON jpf.company_id = cd.company_id
 WHERE jpf.salary_year_avg IS NOT NULL AND
