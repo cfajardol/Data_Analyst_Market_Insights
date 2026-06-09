@@ -65,7 +65,7 @@ INNER JOIN skills_job_dim sjd ON tpj.job_id = sjd.job_id
 INNER JOIN skills_dim sd ON sjd.skill_id = sd.skill_id
 ORDER BY tpj.salary_year_avg DESC;
 ```
-Here's the breakdown of the skills required for the top 10 highest paying Data Analyst jobs iin 2023:
+Here's the breakdown of the skills required for the top 10 highest paying Data Analyst jobs in 2023:
 
 - **SQL** is leading with a bold count of 8
 - **Python** follows closely with a bold count of 7.
